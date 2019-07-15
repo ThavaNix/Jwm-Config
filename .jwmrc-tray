@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<JWM>
+	<Tray autohide="off" insert="right" x="0" y="-1" width="0" height="30" layer="above" layout="horizontal" halign="left" valign="bottom" >
+		<!-- Additional TrayButton attribute: label -->
+		<TrayButton label="Menu" icon="puppy-white.svg" border="true">root:3</TrayButton>
+		<TrayButton popup="Findnrun" icon="findnrun.png">exec:findnrun</TrayButton>
+		<TrayButton popup="Show Desktop" icon="/usr/local/lib/X11/pixmaps/x48.png" border="true">showdesktop</TrayButton>
+		<TrayButton popup="Browser" icon="/usr/local/lib/X11/pixmaps/www48.png" border="true">exec:defaultbrowser</TrayButton>
+		<TrayButton popup="Terminal" icon="/usr/local/lib/X11/pixmaps/console48.png" border="true">exec:defaultterminal</TrayButton>
+		<Pager/>
+		<!-- Additional TaskList attribute: maxwidth -->
+		<TaskList maxwidth="200"/>
+		<Dock/>
+		<Swallow name="xload" width="32">xload -nolabel -bg "#888888" -fg "#222222" -hl "#4C7CC1"</Swallow>
+		<!-- Additional Swallow attribute: height -->
+		<Spacer width="4"/>
+		<Clock format="%a %d %b %H:%M">exec:PupClockset</Clock>
+	</Tray>
+</JWM>

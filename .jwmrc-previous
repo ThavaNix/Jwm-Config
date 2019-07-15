@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+
+<JWM>
+
+<!-- version flag for rc.update -->
+<!-- When updating change number here and in rc.update -->
+<!-- XDG_JWMRC_VERSION_001 -->
+
+<!-- IMPORTANT, ONLY EDIT /etc/xdg/templates/_root_.jwmrc -->
+<!-- jwm menu for puppy Linux -->
+<RootMenu label="Menu" labeled="false" height="16" onroot="3">
+
+<Menu label="Desktop" icon="x48.png" height="16">
+<Program label="FlSynclient configure your touchpad " icon="/usr/share/pixmaps/puppy/touchpad.svg">flsynclient</Program>
+<Program label="JWMDesk Manager" icon="/usr/local/jwmdesk/icons/jwmdesk64.png">jwmdesk</Program>
+<Program label="PupClockset manager" icon="/usr/local/PupClockset/icons/clockformat48.png">PupClockset</Program>
+<Program label="Redshift GUI" icon="redshiftgui">redshiftgui.sh</Program>
+<Program label="ScreenSaver Control" icon="/usr/local/sscontrol/icons/sscontrol.svg">/usr/local/sscontrol/sscontrol</Program>
+<Program label="Configure Xlock screen locking" icon="/usr/share/pixmaps/puppy/screen_lock.svg">/usr/local/apps/Xlock/AppRun -configure</Program>
+<Program label="compton" icon="/usr/share/icons/hicolor/scalable/apps/compton.svg">compton-gtk</Program>
+ <Separator/> 
+<Program label="Chooselocale country localisation" icon="/usr/share/pixmaps/puppy/country_language.svg">chooselocale</Program>
+<Program label="Psync Time Server Synchronisation" icon="/usr/share/pixmaps/puppy/clock.svg">psync</Program>
+<Program label="Set date and time" icon="/usr/share/pixmaps/puppy/date_time.svg">set-time-for-puppy</Program>
+<Program label="Set timezone" icon="/usr/share/pixmaps/puppy/country_timezone.svg">timezone-set</Program>
+<Program label="pupX set properties of X" icon="/usr/share/pixmaps/puppy/screen_resolution.svg">pupx</Program>
+ <Separator/> 
+<Program label="Font viewer" icon="/usr/share/pixmaps/puppy/font.svg">gfontsel</Program>
+</Menu>
+<Menu label="System" icon="pc48.png" height="16">
+<Program label="Boot Manager" icon="/usr/share/pixmaps/puppy/startup.svg">bootmanager</Program>
+<Program label="CPU Frequency Scaling Tool" icon="/usr/share/icons/devices/cpu.png">wcpufreq</Program>
+<Program label="Grub4Dos bootloader config" icon="gnibbles.png">grub4dosconfig</Program>
+<Program label="HardInfo hardware information" icon="/usr/share/pixmaps/puppy/card_pci.svg">hardinfo</Program>
+<Program label="IPInfo network information" icon="/usr/share/pixmaps/puppy/network.svg">ipinfo</Program>
+<Program label="Multiple monitors settings" icon="/usr/local/lib/X11/pixmaps/pc48.png">lxrandr</Program>
+<Program label="Pup-SysInfo system information" icon="/usr/local/Pup-SysInfo/icons/Pup-SysInfo48.png">Pup-SysInfo</Program>
+ <Separator/> 
+<Program label="Htop System Process Viewer" icon="htop.png">/usr/bin/urxvt -e htop</Program>
+<Program label="Puppy Event Manager" icon="/usr/share/pixmaps/puppy/execute.svg">eventmanager</Program>
+<Program label="Task Manager" icon="/usr/share/pixmaps/puppy/execute_inspect.svg">lxtask</Program>
+<Program label="pSchedule task on time" icon="/usr/share/pixmaps/puppy/clock_interval.svg">/usr/local/bin/pschedule</Program>
+ <Separator/> 
+<Program label="GParted partition manager" icon="gparted.png">gparted_shell</Program>
+<Program label="Grub4Dos bootloader config" icon="gnibbles.png">grub4dosconfig</Program>
+ <Separator/> 
+<Program label="CUPS manage printing" icon="/usr/share/pixmaps/puppy/print.svg">cups_shell</Program>
+ <Separator/> 
+<Program label="Format floppy disk" icon="/usr/share/pixmaps/puppy/floppy.svg">floppy-format.sh</Program>
+ <Separator/> 
+<Program label="Login and Security Manager" icon="/usr/share/pixmaps/puppy/user_login.svg">loginmanager</Program>
+<Program label="Xlock lock screen" icon="/usr/share/pixmaps/puppy/screen_lock.svg">/usr/local/apps/Xlock/AppRun -locknow</Program>
+</Menu>
+<Menu label="Setup" icon="configuration48.png" height="16">
+<Program label="Check dependencies installed pkg" icon="/usr/share/pixmaps/puppy/package_inspect.svg">/usr/local/petget/check_deps.sh</Program>
+<Program label="Default Applications Chooser" icon="/usr/share/pixmaps/puppy/execute_inspect.svg">puppyapps</Program>
+<Program label="Puppy Package Manager" icon="/usr/share/pixmaps/puppy/package_add.svg">/usr/local/petget/pkg_chooser.sh</Program>
+<Program label="Puppy Quickpet" icon="/usr/share/doc/puppylogo96.png">quickpet</Program>
+<Program label="Puppy Setup" icon="/usr/share/pixmaps/puppy/puppy_config.svg">wizardwizard</Program>
+<Program label="Puppy Updates" icon="/usr/share/doc/puppylogo96.png">/usr/local/quickpet/bionicupdate</Program>
+<Program label="QuickSetup first-run settings" icon="/usr/share/pixmaps/puppy/puppy_config.svg">quicksetup</Program>
+<Program label="SFS-Load on-the-fly" icon="squashfs-image.png">sfs_load</Program>
+ <Separator/> 
+<Program label="ALSA sound Wizard" icon="/usr/share/pixmaps/puppy/sound.svg">alsawizard</Program>
+<Program label="CUPS Printer Wizard" icon="/usr/share/pixmaps/puppy/print.svg">cups_shell</Program>
+<Program label="Internet Connection Wizard" icon="/usr/share/pixmaps/puppy/internet_connect.svg">connectwizard</Program>
+<Program label="Menu Manager - edit the menu" icon="/usr/share/pixmaps/puppy/menu.svg">menumanager</Program>
+<Program label="Mouse/Keyboard Wizard" icon="/usr/share/pixmaps/puppy/mouse_keyboard.svg">input-wizard</Program>
+<Program label="Screen/Graphics Wizard" icon="/usr/share/pixmaps/puppy/graphics.svg">xorgwizard</Program>
+<Program label="Startup Control - control startup apps" icon="/usr/share/pixmaps/puppy/startup_app.svg">wmstartups</Program>
+ <Separator/> 
+<Program label="BootFlash install Puppy to USB" icon="/usr/share/pixmaps/puppy/flashcard_usb.svg">/usr/sbin/bootflash</Program>
+<Program label="Grub4Dos bootloader config" icon="gnibbles.png">grub4dosconfig</Program>
+<Program label="Legacy GRUB Config 2013" icon="/usr/share/pixmaps/puppy/startup_os.svg">legacy_grub_2013</Program>
+<Program label="Puppy installer" icon="/usr/share/pixmaps/puppy/power.svg">/usr/sbin/dotpup1</Program>
+<Program label="Remaster Puppy live-CD" icon="/usr/share/pixmaps/puppy/puppy_remaster.svg">/usr/sbin/remasterpup2</Program>
+<Program label="Remove builtin packages" icon="/usr/share/pixmaps/puppy/package_remove.svg">/usr/sbin/remove_builtin</Program>
+</Menu>
+
+<Separator/>
+
+<Menu label="Utility" icon="utility48.png" height="16">
+<Program label="ClipIt" icon="/usr/share/pixmaps/puppy/clipboard.svg">clipit</Program>
+<Program label="GtkHash" icon="gtkhash">gtkhash</Program>
+<Program label="ListDD list dynamic dependencies" icon="/usr/local/ListDD/icons/listdd.svg">listdd_wrapper</Program>
+<Program label="PackIt" icon="PackIt">packit</Program>
+<Program label="UExtract" icon="UExtract">/usr/local/apps/UExtract/AppRun</Program>
+<Program label="Urxvt Terminal Control" icon="/usr/local/UrxvtControl/icons/urxvtcontrol.svg">urxvtcontrol</Program>
+<Program label="Window Effects" icon="preferences-system-windows.svg">compton-conf</Program>
+<Program label="XArchive Manager" icon="/usr/share/pixmaps/xarchive.xpm">xarchive</Program>
+<Program label="Xdelta file difference manager" icon="/usr/share/pixmaps/puppy/file_compare.svg">xdelta_gui</Program>
+<Program label="Xffm Patch manager" icon="/usr/share/pixmaps/xfdiff-icon.png">xfdiff4</Program>
+<Program label="xvkbd virtual keyboard" icon="/usr/share/pixmaps/puppy/keyboard.svg">xvkbd</Program>
+ <Separator/> 
+<Program label="Java Control Panel" icon="java.png">javaif</Program>
+<Program label="MoManager create non-English Puppy" icon="/usr/share/pixmaps/puppy/country_language.svg">momanager</Program>
+ <Separator/> 
+<Program label="Grsync - synchronize files and folders" icon="grsync.png">grsync</Program>
+<Program label="Pudd copy drive/partition" icon="/usr/share/pixmaps/puppy/copy_disk.svg">Pudd</Program>
+<Program label="Pupsave Backup" icon="/usr/share/pixmaps/puppy/copy_disk.svg">pupsave-backup</Program>
+<Program label="Resize personal storage file" icon="/usr/share/pixmaps/puppy/puppy_increase.svg">resizepfile.sh</Program>
+ <Separator/> 
+<Program label="Gexec execute a command" icon="/usr/share/pixmaps/puppy/execute.svg">gexec</Program>
+<Program label="Urxvt terminal emulator" icon="/usr/share/pixmaps/puppy/terminal.svg">rxvt</Program>
+</Menu>
+<Menu label="Filesystem" icon="folder48.png" height="16">
+<Program label="ROX-Filer file manager" icon="/usr/share/pixmaps/puppy/open.svg">rox</Program>
+ <Separator/> 
+<Program label="Connect Your Android Phone" icon="go.svg">mtpdevice</Program>
+<Program label="Pmount mount/unmount drives" icon="/usr/share/pixmaps/puppy/harddisk.svg">pmount</Program>
+ <Separator/> 
+<Program label="Findnrun" icon="findnrun">findnrun</Program>
+<Program label="pFind file finder" icon="/usr/share/pixmaps/puppy/find.svg">pfind</Program>
+ <Separator/> 
+<Program label="Gdmap graphical disk usage" icon="gdmap_icon.png">gdmap</Program>
+<Program label="MultiRename" icon="multirename">multirename</Program>
+<Program label="Partview free space in drives" icon="/usr/share/pixmaps/puppy/partition.svg">partview</Program>
+</Menu>
+<Menu label="Graphic" icon="paint48.png" height="16">
+<Program label="Gpick" icon="gpick.svg">gpick</Program>
+<Program label="mtPaint image editor" icon="/usr/share/pixmaps/mtpaint.png">mtpaint</Program>
+<Program label="InkscapeLite vector editor" icon="inkscapelite.png">inkscapelite</Program>
+ <Separator/> 
+<Program label="Viewnior" icon="/usr/share/icons/hicolor/scalable/apps/viewnior.svg">viewnior</Program>
+ <Separator/> 
+<Program label="PupCamera digital camera access" icon="/usr/share/pixmaps/puppy/photocamera.svg">pupcamera</Program>
+ <Separator/> 
+<Program label="PeasyGlue image joiner" icon="/usr/share/pixmaps/peasyglue48.png">peasyglue</Program>
+<Program label="PeasyScale graphic resizer and more" icon="/usr/share/pixmaps/peasyscale.png">peasyscale</Program>
+<Program label="Take a Shot!" icon="/usr/share/pixmaps/puppy/photocamera.svg">tas</Program>
+<Program label="Xsane image scanner" icon="xsane.xpm">xsaneshell</Program>
+</Menu>
+<Menu label="Document" icon="word48.png" height="16">
+<Program label="Get LibreOffice download and install LibreOffice" icon="/usr/share/pixmaps/libreoffice-pup.svg">get_libreoffice</Program>
+<Program label="NoteCase notes manager" icon="/usr/share/pixmaps/puppy/notes.svg">notecase</Program>
+<Program label="QtNote Tray App" icon="/usr/share/icons/hicolor/scalable/apps/qtnote.svg">qtnote</Program>
+<Program label="AbiWord" icon="/usr/share/icons/hicolor/scalable/apps/abiword.svg">abiword</Program>
+ <Separator/> 
+<Program label="Geany text editor" icon="/usr/share/icons/hicolor/48x48/apps/geany.png">geany</Program>
+<Program label="Leafpad text editor" icon="leafpad.png">leafpad</Program>
+<Program label="MP console editor" icon="/usr/share/icons/mp.png">mp-5</Program>
+<Program label="Markup Attribute Composition" icon="/usr/share/pixmaps/puppy/edit_html.svg">markup</Program>
+ <Separator/> 
+<Program label="Gxlat Translate" icon="/usr/share/pixmaps/gxlat.svg">gxlat</Program>
+<Program label="Pdict online dictionary" icon="/usr/share/pixmaps/puppy/book_dictionary.svg">pdict</Program>
+<Program label="PeasyPDF convert/join/extract" icon="/usr/share/pixmaps/peasypdf.png">peasypdf</Program>
+<Program label="qpdfview" icon="qpdfview">qpdfview</Program>
+</Menu>
+<Menu label="Business" icon="spread48.png" height="16">
+<Program label="Gnumeric" icon="/usr/share/icons/Puppy Standard/scalable/apps/gnumeric.svg">gnumeric</Program>
+ <Separator/> 
+<Program label="HomeBank" icon="homebank">homebank</Program>
+ <Separator/> 
+<Program label="Galculator" icon="galculator.xpm">galculator</Program>
+<Program label="Gmeasures units converter" icon="/usr/share/icons/gmeasures.png">gmeasures_wrapper</Program>
+<Program label="Xcalc scientific calculator" icon="/usr/share/pixmaps/puppy/calculator.svg">xcalc</Program>
+</Menu>
+<Menu label="Personal" icon="date48.png" height="16">
+<Program label="Figaro's Password Manager 2" icon="fpm2.png">fpm2</Program>
+<Program label="Osmo personal organizer" icon="/usr/share/icons/hicolor/scalable/apps/osmo.svg">osmo</Program>
+ <Separator/> 
+<Program label="PPLOG personal blog" icon="/usr/share/pixmaps/puppy/book.svg">pplog_gui</Program>
+ <Separator/> 
+<Program label="Bcrypt file encryption" icon="/usr/share/pixmaps/puppy/file_lock.svg">bcrypt_gui</Program>
+ <Separator/> 
+<Program label="pClock Time tools" icon="/usr/share/pixmaps/puppy/clock.svg">pclock</Program>
+<Program label="pTiming event timer system" icon="/usr/share/pixmaps/puppy/clock_stopwatch.svg">ptiming</Program>
+</Menu>
+<Menu label="Network" icon="connect48.png" height="16">
+<Program label="Firewall Setup" icon="/usr/share/pixmaps/puppy/firewall.svg">firewall_ng</Program>
+<Program label="FirewallStatus Firewall Tray Icon" icon="/usr/share/pixmaps/puppy/firewall.svg">/usr/sbin/firewallstatusrestart</Program>
+<Program label="Gpptp VPN" icon="/etc/ppp/gpptp/icon/vpn-blue-64.png">gpptp</Program>
+<Program label="Janky Bluetooth" icon="/usr/share/icons/Puppy Standard/scalable/apps/bluetooth.svg">janky_BT</Program>
+<Program label="PeasyPort LAN scanner" icon="/usr/share/pixmaps/peasyport.png">peasyport</Program>
+<Program label="Pnethood access windows shares" icon="/usr/local/apps/pnethood/network-transmit.png">pnethood</Program>
+<Program label="Samba Simple Management" icon="/usr/share/pixmaps/samba/network.svg">samba.sh</Program>
+<Program label="YASSM Samba share mounter" icon="/usr/share/pixmaps/yassm.png">yassm</Program>
+ <Separator/> 
+<Program label="PGPRS Connect" icon="/usr/share/pixmaps/pgprs.svg">pgprs --connect</Program>
+</Menu>
+<Menu label="Internet" icon="www48.png" height="16">
+<Program label="GetFlash - install Flashplayer" icon="/usr/share/icons/flash-player-properties.png">getflash</Program>
+ <Separator/> 
+<Program label="Palemoon" icon="/usr/share/icons/mozicon128.png">palemoon</Program>
+ <Separator/> 
+<Program label="Claws Mail" icon="claws-mail.png">claws-mail</Program>
+ <Separator/> 
+<Program label="HexChat" icon="/usr/share/icons/hicolor/scalable/apps/hexchat.svg">hexchat-wrapper</Program>
+<Program label="PMirrorget website downloader" icon="/usr/share/pixmaps/puppy/install.svg">pmwget</Program>
+<Program label="PuppyPhone Internet telephone" icon="/usr/share/pixmaps/puppy/phone.svg">psip64</Program>
+<Program label="Transmission BitTorrent client" icon="transmission.xpm">transmission-gtk  </Program>
+<Program label="uGet" icon="uget-icon.png">env GDK_BACKEND=x11 uget-gtk</Program>
+ <Separator/> 
+<Program label="Ssh-gui secure remote login" icon="/usr/share/pixmaps/puppy/connect_yes.svg">ssh-gui</Program>
+<Program label="gFTP ftp client" icon="gftp.png">gftp</Program>
+ <Separator/> 
+<Program label="Pup-Advert-Blocker block online ads" icon="/usr/share/pixmaps/puppy/dialog_stop.svg">pup-advert-blocker</Program>
+</Menu>
+<Menu label="Multimedia" icon="multimedia48.png" height="16">
+ <Separator/> 
+<Program label="DeaDBeeF" icon="/usr/share/icons/Puppy Standard/scalable/apps/deadbeef.svg">deadbeef</Program>
+<Program label="QWinFF Media Converter" icon="qwinff">qwinff</Program>
+<Program label="SimpleScreenRecorder" icon="/usr/share/icons/hicolor/scalable/apps/simplescreenrecorder-idle.svg">simplescreenrecorder</Program>
+<Program label="mhWaveEdit" icon="/usr/share/icons/hicolor/64x64/apps/mhwaveedit.png">mhwaveedit</Program>
+ <Separator/> 
+<Program label="Asunder CD Ripper" icon="/usr/share/pixmaps/asunder.png">asunder</Program>
+<Program label="Retrovol Sound Mixer" icon="/usr/share/pixmaps/puppy/sound_mixer.svg">defaultaudiomixer</Program>
+<Program label="Simple GTK Radio" icon="/usr/local/simplegtkradio/data/radiotray.png">simplegtkradio</Program>
+ <Separator/> 
+<Program label="guvcview" icon="/usr/share/pixmaps/guvcview/guvcview.png">guvcview</Program>
+<Program label="mpv Media Player" icon="/usr/share/icons/hicolor/scalable/apps/mpv.svg">/usr/bin/mpv --profile=pseudo-gui</Program>
+ <Separator/> 
+<Program label="ISOMaster iso file editor" icon="/usr/share/pixmaps/puppy/cdrom.svg">isomaster</Program>
+<Program label="Pburn CD/DVD/Blu-ray writer" icon="/usr/share/icons/hicolor/scalable/apps/pburn.svg">pburn</Program>
+<Program label="Pdvdrsab DVD rip/shrink/author/burn" icon="/usr/share/pixmaps/puppy/cd_rip.svg">pdvdrsab</Program>
+</Menu>
+<Menu label="Fun" icon="games48.png" height="16">
+<Program label="Hexalate" icon="/usr/share/icons/hicolor/128x128/apps/hexalate.png">hexalate</Program>
+<Program label="Primrose" icon="/usr/games/Primrose/primrose.png">primrose</Program>
+<Program label="Simsu" icon="simsu">simsu</Program>
+<Program label="Sunfish Chess" icon="/usr/share/icons/Puppy Standard/scalable/categories/game_chess.svg">sunfish-chess</Program>
+<Program label="YahtzeeZ" icon="yahtzeez">yahtzeez</Program>
+<Program label="gPlanarity" icon="gPicon.png">gplanarity</Program>
+<Program label="iQPuzzle" icon="/usr/share/icons/hicolor/scalable/apps/iqpuzzle.svg">iqpuzzle</Program>
+ <Separator/> 
+<Program label="PicPuz jigsaw puzzle" icon="picpuz.png">picpuz</Program>
+<Program label="Rubix cube puzzle" icon="rubix.png">rubix</Program>
+</Menu>
+
+<Separator/>
+
+<Program label="Help" icon="help48.png">exec defaulthtmlviewer file:///usr/share/doc/index.html</Program>
+
+<Program label="Exit" icon="shutdown48.png">/usr/sbin/logout_gui</Program>
+
+<!-- </Menu> -->
+
+</RootMenu>
+
+<!-- 130630 joe added support disable flashing in tray, all apps -->
+<Group>
+<Option>noturgent</Option>
+</Group>
+
+<Group>
+<Class>xmms</Class>
+<Option>icon:xmms.xpm</Option>
+</Group>
+
+<Group>
+<Class>absvolume</Class>
+<Name>absvolume</Name>
+<Option>nolist</Option>
+</Group>
+
+<Group>
+<Name>xmessage</Name>
+<!-- <Option>icon:info16.xpm</Option> -->
+<Option>notitle</Option>
+<Option>nolist</Option>
+</Group>
+
+<Group>
+<Name>minixcal</Name>
+<Option>nolist</Option>
+<Option>layer:above</Option>
+</Group>
+
+<Group>
+<Name>igucal</Name>
+<Option>nolist</Option>
+</Group>
+
+<Group>
+<Class>gtkdialog-splash</Class>
+<Option>nolist</Option>
+<!-- <Option>layer:above</Option> -->
+<Option>nofocus</Option>
+</Group>
+
+<!-- created 130618, a class for all future popups -->
+<Group>
+<Class>splashwindow</Class>
+<Option>nolist</Option>
+<Option>layer:above</Option>
+<Option>nofocus</Option>
+</Group>
+
+<!-- Additional tray attributes: autohide, width, border, layer, layout -->
+<!-- Tray definition moved to separate file: .jwmrc-tray -->
+<Include>/root/.jwmrc-tray</Include>
+
+<WindowStyle>
+<Font>DejaVu Sans-10</Font>
+<Width>6</Width>
+<Height>29</Height>
+<Foreground>#aaaaaa</Foreground>
+<Background>#fffa71:#ffda51</Background>
+<Corner>0</Corner>
+<Outline>gray70</Outline>
+<Active>
+<Foreground>black</Foreground>
+<Background>#ffda51:#ffa100</Background>
+<Outline>black</Outline>
+</Active>
+</WindowStyle>
+
+<PagerStyle>
+<Outline>black</Outline>
+<Foreground>#ffc100</Foreground>
+<Background>#ffc100</Background>
+<Active>
+<Foreground>#ff8100</Foreground>
+<Background>#ffa100</Background>
+</Active>
+</PagerStyle>
+
+<MenuStyle>
+<Font>DejaVu Sans-10</Font>
+<Foreground>black</Foreground>
+<Background>#ffda51</Background>
+<Active>
+<Foreground>black</Foreground>
+<Background>#ffda51:#ffa100</Background>
+</Active>
+</MenuStyle>
+
+<PopupStyle>
+<Font>DejaVu Sans-10</Font>
+<Outline>black</Outline>
+<Foreground>black</Foreground>
+<Background>yellow</Background>
+</PopupStyle>
+
+<!-- <Icons> -->
+<!--	<IconPath>$HOME/.icons</IconPath> -->
+<IconPath>/usr/local/lib/X11/mini-icons</IconPath>
+<IconPath>/usr/local/lib/X11/pixmaps</IconPath>
+<IconPath>/usr/share/pixmaps</IconPath>
+<IconPath>/usr/share/icons/hicolor/48x48/apps</IconPath>
+<IconPath>/usr/local/share/pixmaps</IconPath>
+<IconPath>/usr/share/pixmaps/puppy</IconPath>
+<IconPath>/usr/share/icons/hicolor/48x48/apps</IconPath>
+<IconPath>/usr/share/icons/hicolor/32x32/apps</IconPath>
+<IconPath>/usr/share/icons/hicolor/64x64/apps</IconPath>
+<IconPath>/root/.local/share/icons/hicolor/24x24/apps</IconPath>
+<IconPath>/root/.local/share/icons/hicolor/48x48/apps</IconPath>
+<IconPath>/root/.local/share/icons/hicolor/96x96/apps</IconPath>
+<IconPath>/root/.local/share/icons/hicolor/128x128/apps</IconPath>
+<IconPath>/var/lib/flatpak/exports/share/icons/hicolor/24x24/apps</IconPath>
+<IconPath>/var/lib/flatpak/exports/share/icons/hicolor/48x48apps</IconPath>
+<IconPath>/var/lib/flatpak/exports/share/icons/hicolor/96x96/apps</IconPath>
+<IconPath>/var/lib/flatpak/exports/share/icons/hicolor/128x128/apps</IconPath>
+
+<!-- </Icons> -->
+
+<StartupCommand>xdg_autostart.sh</StartupCommand>
+
+<!-- Virtual Desktops -->
+<!-- Name tags can be contained within Desktops for desktop names.  BK: syntax change with jwm 500... -->
+<Desktops  width="3" height="1"/>
+
+<!-- Double click speed (in milliseconds) -->
+<DoubleClickSpeed>400</DoubleClickSpeed>
+
+<!-- Double click delta (in pixels) -->
+<DoubleClickDelta>3</DoubleClickDelta>
+
+<!-- The focus model (sloppy or click) -->
+<FocusModel>click</FocusModel>
+
+<!-- The snap mode (none, screen, or border) -->
+<SnapMode distance="10">border</SnapMode>
+
+<!-- The move mode (outline or opaque) -->
+<MoveMode>opaque</MoveMode>
+
+<!-- The resize mode (outline or opaque) -->
+<ResizeMode>opaque</ResizeMode>
+
+<!-- Key bindings -->
+<Key key="Up">up</Key>
+<Key key="Down">down</Key>
+<Key key="Right">right</Key>
+<Key key="Left">left</Key>
+<Key key="h">left</Key>
+<Key key="j">down</Key>
+<Key key="k">up</Key>
+<Key key="l">right</Key>
+<Key key="Return">select</Key>
+<Key key="Escape">escape</Key>
+
+<Key mask="A" key="Tab">next</Key>
+<Key mask="A" key="F4">close</Key>
+<Key mask="A" key="#">desktop#</Key>
+<Key mask="A" key="F1">root:3</Key>
+<Key mask="A" key="F2">window</Key>
+
+<Key mask="4" key="Up">maximize</Key>
+<Key mask="4" key="Down">minimize</Key>
+<Key mask="4" key="d">showdesktop</Key>
+<Key mask="4" key="r">exec:gexec</Key>
+<Key mask="4" key="l">exec:/usr/local/apps/Xlock/AppRun -locknow</Key>
+<Key mask="4" key="t">exec:urxvt</Key>
+<Key mask="4" key="f">exec:findnrun</Key>
+
+<!-- <Include>/root/.jwm/themes/jwm-default</Include> -->
+<Include>/root/.jwm/jwmrc-theme</Include>
+<Include>/root/.jwm/jwmrc-personal</Include>
+</JWM>
