@@ -1,0 +1,17 @@
+#!/bin/bash
+actualIconTheme1=$(cat $HOME/.gtkrc-2.0 | grep gtk-icon-theme-name= | cut -f 2 -d =  | cut -d '"' -f 2 )
+IconPath1="/usr/share/icons/${actualIconTheme1}/*/*"
+echo "<JWM>"
+for p in $IconPath1; do
+   echo "<IconPath>$p</IconPath>"
+done
+	for (( i = 1; i < 4; i++ )); do
+		actualIconTheme2=$(cat /usr/share/icons/${actualIconTheme1}/index.theme | grep Inherits | cut -c10- | cut -d , -f $i)
+		IconPath2="/usr/share/icons/${actualIconTheme2}/*/*"
+			for p in $IconPath2; do
+   			echo "<IconPath>$p</IconPath>"
+			done
+done
+echo "</JWM>"
+
+
