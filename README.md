@@ -9,3 +9,4 @@ Work In Progress For The Best LightWeight WindowManager:
 - Dependies : 
   - jwmappmenugen 
   - jwm 
+  - sxhkd 
