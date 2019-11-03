@@ -3,7 +3,7 @@
 Work In Progress For The Best LightWeight WindowManager:
 
 - Put .jwmrc in you /home/user/.jwmrc
-- Put jwmappmenugen,jwm folder in .config file
+- Put jwmappmenugen and jwm folders in .config file
 
 
 - Dependies : 
